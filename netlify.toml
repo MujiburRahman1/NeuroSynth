@@ -7,6 +7,9 @@
 [functions]
   directory = "../netlify/functions"
 
+[build.environment]
+  NODE_VERSION = "20"
+
 # Proxy /api/generate to the Netlify Function
 [[redirects]]
   from = "/api/generate"

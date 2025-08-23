@@ -1,0 +1,23 @@
+[build]
+  base = "frontend"
+  publish = "frontend/dist"
+  command = "npm ci && npm run build"
+
+# Functions live at /netlify/functions
+[functions]
+  directory = "netlify/functions"
+
+# Proxy /api/generate to the Netlify Function
+[[redirects]]
+  from = "/api/generate"
+  to = "/.netlify/functions/generate"
+  status = 200
+  force = true
+
+# SPA fallback for Vite router (if needed later)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+

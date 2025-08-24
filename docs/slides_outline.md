@@ -1,7 +1,7 @@
-# NeuroGen — Slide Outline (with speaker notes)
+# NeuroSynth — Slide Outline (with speaker notes)
 
 ## 1) Title
-- NeuroGen: Synthetic Data Dashboard
+- NeuroSynth: Synthetic Data Dashboard
 - Tagline: Detect • Connect • Personalize
 - Screenshot + logo; hackathon, team, date
 Notes: One‑liner: "Privacy‑safe synthetic neurology data in seconds."

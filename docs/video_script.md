@@ -1,14 +1,14 @@
-## NeuroGen – 90‑second friendly video script
+## NeuroSynth – 90‑second friendly video script
 
 Tone: warm, human, 120–140 wpm. Music: light upbeat, fade near Self‑Assessment.
 
 00:00–00:05 — Title card
-- On‑screen: "NeuroGen – Synthetic Data Dashboard"
-- Voice: "Hey there! NeuroGen is your friendly co‑pilot for privacy‑safe synthetic neurology data—ready in seconds."
+- On‑screen: "NeuroSynth – Synthetic Data Dashboard"
+- Voice: "Hey there! NeuroSynth is your friendly co‑pilot for privacy‑safe synthetic neurology data—ready in seconds."
 
 00:06–00:15 — Why it matters
 - On‑screen: soft hero shot of the dashboard
-- Voice: "Real patient data is sensitive and hard to access. But research needs data now. NeuroGen bridges that gap—safe, fast, and helpful."
+- Voice: "Real patient data is sensitive and hard to access. But research needs data now. NeuroSynth bridges that gap—safe, fast, and helpful."
 
 00:16–00:28 — Generate in one click
 - On‑screen: choose "Epilepsy", type 10,000, click Generate
@@ -36,18 +36,18 @@ Tone: warm, human, 120–140 wpm. Music: light upbeat, fade near Self‑Assessme
 
 01:27–01:30 — Friendly close (outro)
 - On‑screen: "Detect • Connect • Personalize" + logo + CTA: "Try the demo"
-- Voice: "NeuroGen—helping you detect earlier, connect teams, and personalize insights. Ready when you are."
+- Voice: "NeuroSynth—helping you detect earlier, connect teams, and personalize insights. Ready when you are."
 
 ---
 
 ### Optional SRT (captions)
 1
 00:00:00,000 --> 00:00:05,000
-Hey there! NeuroGen is your friendly co‑pilot for privacy‑safe synthetic neurology data—ready in seconds.
+Hey there! NeuroSynth is your friendly co‑pilot for privacy‑safe synthetic neurology data—ready in seconds.
 
 2
 00:00:06,000 --> 00:00:15,000
-Real patient data is sensitive and hard to access. NeuroGen bridges that gap—safe, fast, and helpful.
+Real patient data is sensitive and hard to access. NeuroSynth bridges that gap—safe, fast, and helpful.
 
 3
 00:00:16,000 --> 00:00:28,000
@@ -75,6 +75,6 @@ Export CSV, share a stateful link, and review recent runs in one place.
 
 9
 00:01:27,000 --> 00:01:30,000
-NeuroGen—Detect • Connect • Personalize. Ready when you are.
+NeuroSynth—Detect • Connect • Personalize. Ready when you are.
 
 

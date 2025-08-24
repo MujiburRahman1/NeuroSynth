@@ -320,8 +320,8 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-brand-50 flex">
-      <aside className="w-80 bg-white border-r border-slate-200 px-4 py-6 space-y-6">
+    <div className="min-h-screen bg-brand-50 flex flex-col md:flex-row">
+      <aside className="w-full md:w-80 bg-white border-b md:border-b-0 md:border-r border-slate-200 px-4 py-6 space-y-6">
         <div className="flex items-center gap-3">
           <svg className="h-7 w-7 text-brand-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M12 2c-4.97 0-9 3.582-9 8 0 2.23 1.02 4.233 2.67 5.67.38.33.33.94-.12 1.18-.8.43-1.33 1.05-1.33 1.86 0 1.38 1.78 2.29 3.33 1.55 1.19-.57 2.55-.88 4.45-.88s3.26.31 4.45.88c1.55.74 3.33-.17 3.33-1.55 0-.81-.53-1.43-1.33-1.86-.45-.24-.5-.85-.12-1.18A7.94 7.94 0 0 0 21 10c0-4.418-4.03-8-9-8z"/>
@@ -359,9 +359,9 @@ export default function App() {
               />
             </div>
             <div className="flex items-center gap-3">
-              <button onClick={onGenerate} className="flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-4 py-2 rounded disabled:opacity-60 shadow-sm" disabled={loading || !disease}>
-                <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M4 4h12v2H4zM4 9h12v2H4zM4 14h7v2H4z"/></svg>
-                Generate Data
+              <button onClick={onGenerate} className="w-full flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-4 py-3 rounded-lg disabled:opacity-60 shadow font-semibold" disabled={loading || !disease}>
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zm18.71-11.04a1.003 1.003 0 0 0 0-1.42l-2.5-2.5a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.99-1.66z"/></svg>
+                <span className="font-semibold">Generate Data</span>
               </button>
               {loading && <Loader />}
             </div>
@@ -373,11 +373,11 @@ export default function App() {
         </div>
       </aside>
 
-      <main className="flex-1 px-6 py-6">
+      <main className="flex-1 px-4 md:px-6 py-6">
         <h1 className="text-2xl font-semibold text-slate-900">Synthetic Data Dashboard</h1>
 
         <div className="mt-4 bg-brand-50 border border-brand-100 rounded-lg shadow-sm p-2">
-          <div className="flex gap-2">
+          <div className="flex gap-2 flex-wrap md:flex-nowrap">
             <button onClick={() => setActiveTab('generated')} className={`flex items-center gap-2 px-3 py-2 rounded-md border transition-colors ${activeTab==='generated' ? 'bg-transparent text-brand-700 border-brand-500' : 'border-brand-200 text-slate-700 hover:bg-brand-100 hover:text-brand-700 hover:border-brand-300'}`}>
               <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M4 4h12v2H4zM4 9h12v2H4zM4 14h12v2H4z"/></svg>
               Generated Data

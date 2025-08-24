@@ -327,7 +327,7 @@ export default function App() {
             <path d="M12 2c-4.97 0-9 3.582-9 8 0 2.23 1.02 4.233 2.67 5.67.38.33.33.94-.12 1.18-.8.43-1.33 1.05-1.33 1.86 0 1.38 1.78 2.29 3.33 1.55 1.19-.57 2.55-.88 4.45-.88s3.26.31 4.45.88c1.55.74 3.33-.17 3.33-1.55 0-.81-.53-1.43-1.33-1.86-.45-.24-.5-.85-.12-1.18A7.94 7.94 0 0 0 21 10c0-4.418-4.03-8-9-8z"/>
           </svg>
           <div>
-            <div className="text-xl font-semibold">NeuroGen</div>
+            <div className="text-xl font-semibold">NeuroSynth</div>
             <div className="text-slate-500 text-sm">Synthetic data engine</div>
           </div>
         </div>
@@ -410,7 +410,7 @@ export default function App() {
         {activeTab === 'about' && (
           <section className="mt-6 bg-white rounded-lg shadow p-6 border border-slate-200 space-y-4">
             <div>
-              <h2 className="text-xl font-semibold">About NeuroGen</h2>
+              <h2 className="text-xl font-semibold">About NeuroSynth</h2>
               <p className="text-slate-600">The Engine for the Next Generation of Neurological AI</p>
             </div>
             <div className="space-y-3">
@@ -420,10 +420,10 @@ export default function App() {
               </div>
               <div>
                 <h3 className="font-medium">Our Solution: A Synthetic Data Generation Platform</h3>
-                <p className="text-slate-700">NeuroGen generates realistic, structured, and safe synthetic data for a wide range of neurological and mental health conditions.</p>
+                <p className="text-slate-700">NeuroSynth generates realistic, structured, and safe synthetic data for a wide range of neurological and mental health conditions.</p>
               </div>
               <div>
-                <h3 className="font-medium">How NeuroGen Empowers Detection and Research</h3>
+                <h3 className="font-medium">How NeuroSynth Empowers Detection and Research</h3>
                 <ul className="list-disc pl-5 text-slate-700 space-y-1">
                   <li>Train and validate new AI models for early disease detection.</li>
                   <li>Simulate patient populations to test treatment personalization algorithms.</li>
@@ -577,7 +577,7 @@ export default function App() {
                   <button onClick={() => {
                     const total = records.length
                     const riskSummary = riskData.map(d=>`${d.name}:${d.value}`).join(', ')
-                    const text = `NeuroGen summary\nDisease: ${disease}\nRecords: ${count}\nGenerated: ${total}\nRisk: ${riskSummary}`
+                    const text = `NeuroSynth summary\nDisease: ${disease}\nRecords: ${count}\nGenerated: ${total}\nRisk: ${riskSummary}`
                     navigator.clipboard.writeText(text)
                     setToastText('Summary copied')
                     setTimeout(()=>setToastText(''), 2500)

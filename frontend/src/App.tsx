@@ -320,7 +320,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 flex">
+    <div className="min-h-screen bg-brand-50 flex">
       <aside className="w-80 bg-white border-r border-slate-200 px-4 py-6 space-y-6">
         <div className="flex items-center gap-3">
           <svg className="h-7 w-7 text-brand-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -359,14 +359,14 @@ export default function App() {
               />
             </div>
             <div className="flex items-center gap-3">
-              <button onClick={onGenerate} className="flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-4 py-2 rounded disabled:opacity-60" disabled={loading || !disease}>
+              <button onClick={onGenerate} className="flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-4 py-2 rounded disabled:opacity-60 shadow-sm" disabled={loading || !disease}>
                 <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M4 4h12v2H4zM4 9h12v2H4zM4 14h7v2H4z"/></svg>
                 Generate Data
               </button>
               {loading && <Loader />}
             </div>
             {csvB64 && (
-              <button onClick={downloadCsv} className="w-full border border-brand-600 text-brand-700 px-4 py-2 rounded">Download CSV</button>
+              <button onClick={downloadCsv} className="w-full border border-brand-600 text-brand-700 px-4 py-2 rounded hover:bg-brand-50">Download CSV</button>
             )}
             {error && <p className="text-red-600">{error}</p>}
           </div>
@@ -376,25 +376,25 @@ export default function App() {
       <main className="flex-1 px-6 py-6">
         <h1 className="text-2xl font-semibold text-slate-900">Synthetic Data Dashboard</h1>
 
-        <div className="mt-4 bg-white border border-slate-200 rounded-lg shadow-sm p-2">
+        <div className="mt-4 bg-brand-50 border border-brand-100 rounded-lg shadow-sm p-2">
           <div className="flex gap-2">
-            <button onClick={() => setActiveTab('generated')} className={`flex items-center gap-2 px-3 py-2 rounded-md ${activeTab==='generated' ? 'bg-brand-50 text-brand-700 border border-brand-200' : 'hover:bg-slate-100 text-slate-700'}`}>
+            <button onClick={() => setActiveTab('generated')} className={`flex items-center gap-2 px-3 py-2 rounded-md border transition-colors ${activeTab==='generated' ? 'bg-transparent text-brand-700 border-brand-500' : 'border-brand-200 text-slate-700 hover:bg-brand-100 hover:text-brand-700 hover:border-brand-300'}`}>
               <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M4 4h12v2H4zM4 9h12v2H4zM4 14h12v2H4z"/></svg>
               Generated Data
             </button>
-            <button onClick={() => setActiveTab('insights')} className={`flex items-center gap-2 px-3 py-2 rounded-md ${activeTab==='insights' ? 'bg-brand-50 text-brand-700 border border-brand-200' : 'hover:bg-slate-100 text-slate-700'}`}>
+            <button onClick={() => setActiveTab('insights')} className={`flex items-center gap-2 px-3 py-2 rounded-md border transition-colors ${activeTab==='insights' ? 'bg-transparent text-brand-700 border-brand-500' : 'border-brand-200 text-slate-700 hover:bg-brand-100 hover:text-brand-700 hover:border-brand-300'}`}>
               <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M3 3h2v14H3zM8 8h2v9H8zM13 5h2v12h-2zM18 10h2v7h-2z"/></svg>
               Data Insights
             </button>
-            <button onClick={() => setActiveTab('assessment')} className={`flex items-center gap-2 px-3 py-2 rounded-md ${activeTab==='assessment' ? 'bg-brand-50 text-brand-700 border border-brand-200' : 'hover:bg-slate-100 text-slate-700'}`}>
+            <button onClick={() => setActiveTab('assessment')} className={`flex items-center gap-2 px-3 py-2 rounded-md border transition-colors ${activeTab==='assessment' ? 'bg-transparent text-brand-700 border-brand-500' : 'border-brand-200 text-slate-700 hover:bg-brand-100 hover:text-brand-700 hover:border-brand-300'}`}>
               <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 12H9v-2h2v2zm0-4H9V6h2v4z"/></svg>
               Self-Assessment
             </button>
-            <button onClick={() => setActiveTab('guide')} className={`flex items-center gap-2 px-3 py-2 rounded-md ${activeTab==='guide' ? 'bg-brand-50 text-brand-700 border border-brand-200' : 'hover:bg-slate-100 text-slate-700'}`}>
+            <button onClick={() => setActiveTab('guide')} className={`flex items-center gap-2 px-3 py-2 rounded-md border transition-colors ${activeTab==='guide' ? 'bg-transparent text-brand-700 border-brand-500' : 'border-brand-200 text-slate-700 hover:bg-brand-100 hover:text-brand-700 hover:border-brand-300'}`}>
               <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M4 4h12v2H4zM4 8h12v2H4zM4 12h12v2H4zM4 16h12v2H4z"/></svg>
               Disease Guide
             </button>
-            <button onClick={() => setActiveTab('about')} className={`flex items-center gap-2 px-3 py-2 rounded-md ${activeTab==='about' ? 'bg-brand-50 text-brand-700 border border-brand-200' : 'hover:bg-slate-100 text-slate-700'}`}>
+            <button onClick={() => setActiveTab('about')} className={`flex items-center gap-2 px-3 py-2 rounded-md border transition-colors ${activeTab==='about' ? 'bg-white text-brand-700 border-brand-300' : 'border-brand-200 text-slate-700 hover:bg-brand-100 hover:text-brand-700 hover:border-brand-300'}`}>
               <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path d="M9 2a7 7 0 100 14A7 7 0 009 2zm0 4a1 1 0 110 2 1 1 0 010-2zm-1 4h2v4H8v-4z"/></svg>
               About
             </button>
@@ -403,7 +403,7 @@ export default function App() {
               navigator.clipboard.writeText(location.href)
               setToastText('Shareable link copied')
               setTimeout(()=>setToastText(''), 2500)
-            }} className="px-3 py-2 border rounded hover:bg-slate-50 text-slate-700">Share Link</button>
+            }} className="px-3 py-2 border rounded text-slate-700 border-brand-200 hover:bg-brand-100 hover:text-brand-700 hover:border-brand-300 transition-colors">Share Link</button>
           </div>
         </div>
 

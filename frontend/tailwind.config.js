@@ -8,16 +8,16 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
+          50: 'hsl(208 100% 97%)',     // background
+          100: 'hsl(207 50% 95%)',     // secondary (very light)
+          200: 'hsl(207 40% 90%)',     // borders
+          300: 'hsl(195 53% 79%)',     // accent light
+          400: 'hsl(195 53% 60%)',     // accent
+          500: 'hsl(207 44% 49%)',     // primary
+          600: 'hsl(207 44% 40%)',     // primary hover / darker
+          700: 'hsl(207 30% 35%)',
+          800: 'hsl(207 30% 25%)',
+          900: 'hsl(207 30% 18%)',
         }
       }
     },
